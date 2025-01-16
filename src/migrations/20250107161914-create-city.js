@@ -10,7 +10,9 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false , // changes done ie -> added by me 
+        unique: true
       },
       createdAt: {
         allowNull: false,
